@@ -9,7 +9,6 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "./config/firestore";
 
 
-
 // const getEmployees = async() => {
 
 //   const querySnapshot = await getDocs(collection(db, "veterinary-clinic"));
@@ -72,7 +71,6 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Login />} /><Route />
-          {/* <Route path='/addproducts' element={<AddProducts />} ></Route>   */}
           <Route path='/register' element={<Register />} /><Route />
           <Route path='/login' element={<Login />} /><Route />
           {/* <Route path='/addproductss' element={<AddProducts1 />} /><Route />
