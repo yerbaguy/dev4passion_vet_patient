@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Sitebar from './components/Sitebar';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Overview from './pages/Overview';
+import { Overview, OverviewOne, OverviewTwo, OverviewThree, OverviewSubOneFirst } from './pages/Overview';
 
 function App() {
   return (
@@ -11,7 +11,14 @@ function App() {
       <Router>
         <Sitebar />
         <Routes>
-          <Route path='/' element={<Overview />} /><Route />
+          <Route path='/overview' element={<Overview />} /><Route />
+          <Route path='/overview/users' element={<OverviewOne />} /><Route />
+
+          <Route path='/overview/sub/overview1/first' element={<OverviewSubOneFirst />} /><Route />
+
+          <Route path='/overview/revenue' element={<OverviewTwo />} /><Route />
+          <Route path='/overview/another' element={<OverviewThree />} /><Route />
+         
           {/* <Route path='/addproducts' element={<AddProducts />} /><Route /> */}
           {/* <Route path='/addproductss' element={<AddProducts1 />} /><Route />
           <Route path='/edit' element={<Edit />} /><Route />

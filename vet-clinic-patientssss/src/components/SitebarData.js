@@ -17,11 +17,26 @@ export const SidebarData = [
                 path: '/overview/users',
                 icon: <IoIcons.IoIosPaper />,
 
+                subNavOverview: [
+                    {
+                        title: 'SubOverview',
+                        path: '/overview/sub/overview1',
+                        icon: <IoIcons.IoIosPaper />,
+                    }
+                ]
+
             }, 
 
             {
                 title: 'Revenue',
                 path: '/overview/revenue',
+                icon: <IoIcons.IoIosPaper />,
+
+            },
+
+            {
+                title: 'Another',
+                path: '/overview/another',
                 icon: <IoIcons.IoIosPaper />,
 
             }
@@ -40,11 +55,20 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Reports',
-                path: '/reports/reports1',
-                icon: <IoIcons.IoIosPaper />,
+                // title: 'Reports',
+                // path: '/reports/reports1',
+                // icon: <IoIcons.IoIosPaper />,
+
+                subNavReports: [
+                    {
+                        title: 'SubReports',
+                        path: '/reports/sub/reports1',
+                        icon: <IoIcons.IoIosPaper />,
+                    }
+                ]
 
             },
+            
 
             {
                 title: 'Reports2',
@@ -53,19 +77,19 @@ export const SidebarData = [
 
             },
 
-            {
-                title: 'Reports3',
-                path: '/reports/reports3',
-                icon: <IoIcons.IoIosPaper />,
+            // {
+            //     title: 'Reports3',
+            //     path: '/reports/reports3',
+            //     icon: <IoIcons.IoIosPaper />,
 
-            },
+            // },
 
-            {
+            // {
 
-                title: 'Products',
-                path: '/products',
-                icon: <FaIcons.FaCartPlus />,
-            }
+            //     title: 'Products',
+            //     path: '/products',
+            //     icon: <FaIcons.FaCartPlus />,
+            // }
         ]
     }
 ]
